@@ -1,0 +1,67 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "Scrabble Solver Service",
+        "description": "HTTP REST service that returns Scrabble words for a given set of letters",
+        "license": {
+            "name": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+        }
+    },
+    "host": "localhost:8080",
+    "basePath": "/",
+    "tags": [
+        {
+            "name": "ScrabbleSolverService",
+            "description": "API for returning Scrabble words for a given set of letters in the system"
+        }
+    ],
+    "schemes": ["http"],
+    "paths": {
+        "/words/{letters}": {
+            "get": {
+                "tags": [
+                    "ScrabbleSolverService"
+                ],
+                "summary": "Get Scrabble words for a given set of letters",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "letters",
+                        "required": true,
+                        "description": "String of arbitrary letters",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/ScrabbleResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Failed. Bad Request."
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "ScrabbleResponse": {
+            "type": "object",
+            "properties": {
+                "letters": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
