@@ -1,4 +1,13 @@
-
+/**
+ * 
+ * ScoreValues.
+ * 
+ * @remarks
+ * This is our ScoreValues enum which purpose is to provide 
+ * point values for every letter with the final goal of being
+ * able to calculate the Scrabble score of a given word.
+ * 
+ */
 export enum ScoreValues {
     A = 1,
     E = 1,

@@ -48,7 +48,7 @@
                         }
                     },
                     "400": {
-                        "description": "Failed. Bad Request."
+                        "description": "Bad Request."
                     }
                 }
             }
@@ -58,8 +58,11 @@
         "ScrabbleResponse": {
             "type": "object",
             "properties": {
-                "letters": {
-                    "type": "string"
+                "words": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
                 }
             }
         }

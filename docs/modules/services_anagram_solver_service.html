@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Math | scrabble-solver-service</title>
+	<title>services/anagram-solver-service | scrabble-solver-service</title>
 	<meta name="description" content="Documentation for scrabble-solver-service">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,105 +55,73 @@
 					<a href="../modules.html">scrabble-solver-service</a>
 				</li>
 				<li>
-					<a href="../modules/math.html">Math</a>
-				</li>
-				<li>
-					<a href="math.math-1.html">Math</a>
+					<a href="services_anagram_solver_service.html">services/anagram-solver-service</a>
 				</li>
 			</ul>
-			<h1>Class Math</h1>
+			<h1>Module services/anagram-solver-service</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">Math</span>
-					</li>
-				</ul>
-			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Constructors</h3>
+							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="math.math-1.html#constructor" class="tsd-kind-icon">constructor</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Methods</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="math.math-1.html#add" class="tsd-kind-icon">add</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="services_anagram_solver_service.html#anagramsolverservice" class="tsd-kind-icon">Anagram<wbr>Solver<wbr>Service</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
-					<a name="constructor" class="tsd-anchor"></a>
-					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Math<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="math.math-1.html" class="tsd-signature-type" data-tsd-kind="Class">Math</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="math.math-1.html" class="tsd-signature-type" data-tsd-kind="Class">Math</a></h4>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
-					<a name="add" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> add</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">add<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="anagramsolverservice" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> Anagram<wbr>Solver<wbr>Service</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">Anagram<wbr>Solver<wbr>Service<span class="tsd-signature-symbol">(</span>letters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, dictionary<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">String</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">String</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in Math.ts:12</li>
+									<li>Defined in services/anagram-solver-service.ts:18</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns the sum of two numbers.</p>
+									<p>AnagramSolverService.</p>
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>remarks</dt>
-									<dd><p>This is our math utilities lib for shared projects.</p>
+									<dd><p>This is our AnagramSolverService service which purpose is to return all possible words from our dictionary
+										that can be spelled with the given letters.</p>
 									</dd>
 								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>x: <span class="tsd-signature-type">number</span></h5>
+									<h5>letters: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The first input number</p>
+										<p>The first service parameter must be a string which represent the given letters.</p>
 									</div>
 								</li>
 								<li>
-									<h5>y: <span class="tsd-signature-type">number</span></h5>
+									<h5>dictionary: <span class="tsd-signature-type">String</span><span class="tsd-signature-symbol">[]</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The second input number</p>
+										<p>The second service parameter must be an array of strings which represent the dictionary
+										of words.</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<p>The sum of <code>x</code> and <code>y</code></p>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">String</span><span class="tsd-signature-symbol">[]</span></h4>
+							<p>a list of all possible words sorted by Scrabble score.</p>
 						</li>
 					</ul>
 				</section>
@@ -165,40 +133,34 @@
 					<li class=" ">
 						<a href="../modules.html">Exports</a>
 					</li>
+					<li class=" tsd-kind-module">
+						<a href="app.html">app</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="middlewares_load_source_data_middleware.html">middlewares/load-<wbr>source-<wbr>data-<wbr>middleware</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="routes_scrabble_solver_router.html">routes/scrabble-<wbr>solver-<wbr>router</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="score_values.html">score-<wbr>values</a>
+					</li>
 					<li class="current tsd-kind-module">
-						<a href="../modules/math.html">Math</a>
+						<a href="services_anagram_solver_service.html">services/anagram-<wbr>solver-<wbr>service</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="../modules/app.html">app</a>
+						<a href="services_get_data_source_service.html">services/get-<wbr>data-<wbr>source-<wbr>service</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="../modules/middlewares_load_source_data.html">middlewares/load-<wbr>source-<wbr>data</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/routes_scrabble_solver.html">routes/scrabble-<wbr>solver</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/services_get_data_source.html">services/get-<wbr>data-<wbr>source</a>
+						<a href="services_scrabble_sorting_service.html">services/scrabble-<wbr>sorting-<wbr>service</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-module">
-						<a href="math.math-1.html" class="tsd-kind-icon">Math</a>
-						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="math.math-1.html#constructor" class="tsd-kind-icon">constructor</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
-								<a href="math.math-1.html#add" class="tsd-kind-icon">add</a>
-							</li>
-						</ul>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="services_anagram_solver_service.html#anagramsolverservice" class="tsd-kind-icon">Anagram<wbr>Solver<wbr>Service</a>
 					</li>
-				</ul>
-				<ul class="after-current">
 				</ul>
 			</nav>
 		</div>
@@ -213,11 +175,7 @@
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
-				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
 			</ul>
 		</div>
 	</div>

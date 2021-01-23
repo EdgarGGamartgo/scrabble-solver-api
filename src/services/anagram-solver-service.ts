@@ -1,16 +1,30 @@
 import _ from "lodash" 
-import { CalculateWordScore } from './calculate-word-score'
+import { ScrabbleSortingService } from './scrabble-sorting-service'
 
-export const ReturnAnagrams = (letters: string, dictionary: String[]) => {
+/**
+ * AnagramSolverService.
+ *
+ * @remarks
+ * This is our AnagramSolverService service which purpose is to return all possible words from our dictionary 
+ * that can be spelled with the given letters. 
+ * 
+ * @param letters - The first service parameter must be a string which represent the given letters.
+ * 
+ * @param dictionary - The second service parameter must be an array of strings which represent the dictionary
+ * of words.
+ * 
+ * @returns a list of all possible words sorted by Scrabble score.
+ */
+export const AnagramSolverService = (letters: string, dictionary: String[]) => {
     letters = letters.toLowerCase()
     var letters_count = _.countBy(letters)
     var anagrams = new Set()
      for (const word of dictionary) {
         // Check if all the unique letters in word are in the
         // scrambled letters 
-        let words = new Set([...word]);
-        let letterss = new Set([...letters]);
-        let difference = new Set([...words].filter(x => !letterss.has(x)));
+        let wordsSet = new Set([...word]);
+        let lettersSet = new Set([...letters]);
+        let difference = new Set([...wordsSet].filter(x => !lettersSet.has(x)));
         if (difference.size === 0) {
             var check_word = new Set()
             // Check if the count of each letter is less than or equal
@@ -28,16 +42,8 @@ export const ReturnAnagrams = (letters: string, dictionary: String[]) => {
             }
         }
     }
+    // Remove any empty entries in the anagrams set
     anagrams.delete('')
-    const rightOrder = CalculateWordScore([...anagrams] as string[])
-    return { anagrams: rightOrder }
+    // Return the result of scrabble words by scrabble score from highest to lowest scoring
+    return ScrabbleSortingService([...anagrams] as string[])
 }
-
-// const start = () => {
-//     const startTime = (new Date()).getTime();
-//     const { anagrams, listLength } = return_anagrams('pamela')
-//     const endTime = (new Date()).getTime();
-//     console.log(anagrams)
-//     console.log(`Number of anagrams: ${listLength}`)
-//     console.log(`Time Taken: ${(endTime - startTime)/1000} seconds`)
-// }

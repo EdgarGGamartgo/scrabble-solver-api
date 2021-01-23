@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>routes/scrabble-solver | scrabble-solver-service</title>
+	<title>services/scrabble-sorting-service | scrabble-solver-service</title>
 	<meta name="description" content="Documentation for scrabble-solver-service">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,10 +55,10 @@
 					<a href="../modules.html">scrabble-solver-service</a>
 				</li>
 				<li>
-					<a href="routes_scrabble_solver.html">routes/scrabble-solver</a>
+					<a href="services_scrabble_sorting_service.html">services/scrabble-sorting-service</a>
 				</li>
 			</ul>
-			<h1>Module routes/scrabble-solver</h1>
+			<h1>Module services/scrabble-sorting-service</h1>
 		</div>
 	</div>
 </header>
@@ -70,25 +70,54 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Variables</h3>
+							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="routes_scrabble_solver.html#scrabblesolver" class="tsd-kind-icon">scrabble<wbr>Solver</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="services_scrabble_sorting_service.html#scrabblesortingservice" class="tsd-kind-icon">Scrabble<wbr>Sorting<wbr>Service</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Variables</h2>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
-					<a name="scrabblesolver" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> scrabble<wbr>Solver</h3>
-					<div class="tsd-signature tsd-kind-icon">scrabble<wbr>Solver<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Router</span><span class="tsd-signature-symbol"> = ...</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in routes/scrabble-solver.ts:5</li>
-						</ul>
-					</aside>
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="scrabblesortingservice" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> Scrabble<wbr>Sorting<wbr>Service</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">Scrabble<wbr>Sorting<wbr>Service<span class="tsd-signature-symbol">(</span>anagrams<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">String</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">String</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in services/scrabble-sorting-service.ts:15</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>ScrabbleSortingService.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>remarks</dt>
+									<dd><p>This is our ScrabbleSortingService service which purpose is to return a list of words sorted by Scrabble score.
+										From highest Scrabble score to lowest Scrabble score.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>anagrams: <span class="tsd-signature-type">String</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The first and only service parameter must be an array of strings which represent the result
+										of scrabble words.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">String</span><span class="tsd-signature-symbol">[]</span></h4>
+							<p>a list of words sorted by Scrabble score.</p>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -99,26 +128,32 @@
 						<a href="../modules.html">Exports</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="math.html">Math</a>
-					</li>
-					<li class=" tsd-kind-module">
 						<a href="app.html">app</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="middlewares_load_source_data.html">middlewares/load-<wbr>source-<wbr>data</a>
-					</li>
-					<li class="current tsd-kind-module">
-						<a href="routes_scrabble_solver.html">routes/scrabble-<wbr>solver</a>
+						<a href="middlewares_load_source_data_middleware.html">middlewares/load-<wbr>source-<wbr>data-<wbr>middleware</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="services_get_data_source.html">services/get-<wbr>data-<wbr>source</a>
+						<a href="routes_scrabble_solver_router.html">routes/scrabble-<wbr>solver-<wbr>router</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="score_values.html">score-<wbr>values</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="services_anagram_solver_service.html">services/anagram-<wbr>solver-<wbr>service</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="services_get_data_source_service.html">services/get-<wbr>data-<wbr>source-<wbr>service</a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="services_scrabble_sorting_service.html">services/scrabble-<wbr>sorting-<wbr>service</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="routes_scrabble_solver.html#scrabblesolver" class="tsd-kind-icon">scrabble<wbr>Solver</a>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="services_scrabble_sorting_service.html#scrabblesortingservice" class="tsd-kind-icon">Scrabble<wbr>Sorting<wbr>Service</a>
 					</li>
 				</ul>
 			</nav>
@@ -134,7 +169,7 @@
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
 			</ul>
 		</div>
 	</div>
