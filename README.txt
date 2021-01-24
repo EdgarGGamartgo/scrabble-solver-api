@@ -23,6 +23,14 @@ For any other question please send me an email at edgar_martinez@epam.com, thank
 
 # Short analysis of the memory usage and time complexity of implemented algorithm
 
-How to find time and space complexity of algorithms?
-https://adrianmejia.com/how-to-find-time-complexity-of-an-algorithm-code-big-o-notation/
+The implemented solution for the Scrabble Solver Service in this project consists of two
+different services. The first one, "AnagramSolverService", which returns the unsorted result
+of the scrabble words for the given letters. This service only loops once through the dictionary
+and get all the possible found words for the given letters, this approach avoid permutations, 
+however, inside the only dictionary loop there's a nested loop making the measure of memory and time
+complexity the equivalent of O(n^2) in Big O Notation.
+
+The second service, "ScrabbleSortingService" returns the sorted list of words by scrabble scoring.
+This service makes use of 3 nested loops, making the measure of memory and time
+complexity the equivalent of O(n^3) in Big O Notation.
 
