@@ -1,3 +1,6 @@
+Scrabble Solver Service
+Author: Edgar Gabriel Martinez Gonzalez
+
 # Instructions
 
 1. Install latest LTS Node.js on your development environment (https://nodejs.org/en/download/).
@@ -14,3 +17,12 @@
 
 7. To review TypeDoc documentation please open the index.html file inside of the generated
 docs folder on a browser.
+
+Note: Make sure to have installed ts-node-dev ver. 1.1.1 (using ts-node ver. 9.1.1, typescript ver. 4.1.3).
+For any other question please send me an email at edgar_martinez@epam.com, thanks!
+
+# Short analysis of the memory usage and time complexity of implemented algorithm
+
+How to find time and space complexity of algorithms?
+https://adrianmejia.com/how-to-find-time-complexity-of-an-algorithm-code-big-o-notation/
+

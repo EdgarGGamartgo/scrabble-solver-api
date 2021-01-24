@@ -1,5 +1,3 @@
-//jest.mock('../nats-wrapper')
-
 beforeAll(async() => {
     
 })

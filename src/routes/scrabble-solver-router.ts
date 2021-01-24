@@ -24,7 +24,7 @@ router.get('/words/:letters',
         .trim()
         .notEmpty()
         .isAlpha()
-        .withMessage('You must supply valid letters')
+        .withMessage('You must supply valid consecutive letters')
 ],
 // Middleware to homogenize responses for a failed response
 validateRequest,
